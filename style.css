@@ -1,0 +1,437 @@
+/*navbar*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200;1,300&family=Teko:wght@400;500;600;700&display=swap');
+
+.navbar {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-color:#0f0f0f;
+}
+
+li, a, button {
+	background-color: #0f0f0f;
+	font-family: "Montserrat";
+	font-weight: 500;
+	font-size: 16px;
+	color:#ffffff;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+
+.logo {
+	cursor: pointer;
+}
+
+.nav_links {
+	list-style: none;
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+	background-color: #333;
+
+}
+
+.nav_links li a {
+	transition: all 0.3s ease 0s;
+	background-color: #333;
+}
+
+.nav_links li a:hover {
+	color: aqua;
+}
+
+button {
+	padding: 9px 25px;
+	background-color: rgba(0,13,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(0,13,169,0.8);
+}
+/* Global styles */
+
+
+
+	  
+.jumbotron {
+	text-align: center;
+	margin-bottom: 0;
+	background-color: #c461ff;
+}
+
+
+  
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	background-color: #fb7effc4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+a {
+	color: #c461ff;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header styles */
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+}
+
+header h1 {
+	margin: 0;
+}
+
+
+
+
+
+/* Hero section styles */
+
+.hero {
+	background-image: url('hero.jpg');
+	background-size: cover;
+	color: #a200ff;
+	padding: 100px;
+	text-align: center;
+}
+
+.hero h2 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.hero p {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.cta {
+	background-color: #fff;
+	color: #c461ff;
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+
+.cta:hover {
+	background-color:#f830ff;
+	color: #fff;
+}
+
+/* Featured products section styles */
+
+.featured-products {
+	padding: 50px;
+	text-align: center;
+}
+
+.featured-products h2 {
+	margin-bottom: 30px;
+}
+
+.featured-products ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.featured-products li {
+	margin: 0 30px 30px 0;
+	max-width: 300px;
+}
+
+.featured-products li:last-child {
+	margin-right: 0;
+}
+
+.featured-products img {
+	max-width: 100%;
+}
+
+.featured-products h3 {
+	margin: 10px 0;
+}
+
+.featured-products p {
+	font-weight: bold;
+}
+
+/* Customer reviews section styles */
+
+.customer-reviews {
+
+	padding: 50px;
+	text-align: center;
+}
+
+.customer-reviews h2 {
+	margin-bottom: 30px;
+}
+
+.customer-reviews li {
+	margin-bottom: 30px;
+}
+
+.customer-reviews blockquote {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+.customer-reviews p {
+	font-weight: bold;
+}
+
+
+
+/* Footer styles */
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+/*STYLE FOR PAGE 3 GALLERY*/
+
+.row > .column {
+	padding: 0 8px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+	.close:hover,
+	.close:focus {
+		color: #999;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+.mySlides {
+	display: none;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+img {
+	margin-bottom: -4px;
+}
+
+.caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+}
+
+.demo {
+	opacity: 0.6;
+}
+
+	.active,
+	.demo:hover {
+		opacity: 1;
+	}
+
+img.hover-shadow {
+	transition: 0.3s;
+}
+
+.hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*FORM STYLE*/
+
+input[type=text] {
+    width: 75%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+    background-color: lightblue;
+    transition: 0.5s;
+    outline: none;
+}
+
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color:#f830ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color:#a200ff
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color:#fb7effc4;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+.map {
+	text-align: center;
+}
